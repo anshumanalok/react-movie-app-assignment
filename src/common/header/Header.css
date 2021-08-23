@@ -1,0 +1,32 @@
+.header-container {
+  background: #222;
+  height: 36px;
+  padding: 8px 32px 8px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  background: #ff7f7f;
+  height: 35px;
+  animation: spin 8s linear infinite;
+}
+
+.button-container {
+  width: 22%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.book-show-button {
+  margin-right: 5% !important;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
