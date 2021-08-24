@@ -2,3 +2,21 @@
   height: inherit;
   width: inherit;
 }
+
+.home-heading {
+  background: #ff9999;
+  padding: 8px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.home-grid-list-container {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.home-grid-list {
+  flex-wrap: nowrap !important;
+  transform: translateZ(0);
+}
