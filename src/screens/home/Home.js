@@ -118,9 +118,15 @@ const Home = (props) => {
         setUrl("http://localhost:8085/api/v1/movies?page=1&limit=10&title="+title+"&status=RELEASED&start_date="+releaseStartdate+"&end_date="+releaseEnddate+"&genre="+genre+"&artists="+artist)
     };
 
+    const detailsPageRedirection = (data) => {
+        props.history.push({
+            pathname: "/movie/" + data.id,
+        })
+    }
+
     return (
         <div className="home-container">
-            <Header baseUrl={props.baseUrl} />
+            <Header baseUrl={props.baseUrl} isBookingEnabled={false}/>
             <div className="home-heading">
                 Upcoming Movies
             </div>
@@ -141,7 +147,7 @@ const Home = (props) => {
                 <div className="home-page-released-movies-list-container">
                     <GridList cellHeight={350} cols={6} className="home-released-grid-list">
                     {releasedMovies.map(movie => {
-                    return <GridListTile key={movie.id} className="home-released-grid-list-tile">
+                    return <GridListTile key={movie.id} className="home-released-grid-list-tile" onClick={(e)=>{e.preventDefault();detailsPageRedirection(movie);}}>
                             <img src={movie.poster_url} alt={movie.title} />
                             <GridListTileBar
                                 title={movie.title}

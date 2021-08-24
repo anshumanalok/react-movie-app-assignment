@@ -1,0 +1,90 @@
+.detail-page-container {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+.details-container {
+  height: 90%;
+  width: 100%;
+  display: flex;
+}
+
+.back-button {
+  margin-left: 24px !important;
+  margin-top: 8px !important;
+  margin-bottom: 0px !important;
+  height: 24px !important;
+}
+
+.back-button:hover {
+  margin-left: 24px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.details-left-pannel {
+  height: 100%;
+  width: 25%;
+}
+
+.details-middle-pannel {
+  height: 100%;
+  width: 50%;
+}
+
+.details-right-pannel {
+  height: 100%;
+  width: 25%;
+}
+
+.poster {
+  margin-left: 24px;
+  height: 45%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.details {
+  margin-top: 7px !important;
+}
+
+.details-plot {
+  margin-top: 13px !important;
+}
+
+.details-trailer {
+  margin-top: 16px !important;
+}
+
+.details-Rating {
+  margin-left: 10px !important;
+}
+
+.rate {
+  margin-top: 5px !important;
+  margin-left: 10px !important;
+}
+
+.details-artist {
+  margin-top: 16px !important;
+  margin-left: 10px !important;
+}
+
+.detail-artist-grid-list {
+  margin-top: 10px !important;
+  display: flex !important;
+  justify-content: space-around;
+}
+
+.detail-artist-grid-list-tile {
+  width: 46% !important;
+}
+
+.detail-artist-img {
+  width: 100%;
+}

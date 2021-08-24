@@ -16,7 +16,7 @@ const Controller = () => {
  />
  <Route
  path="/movie/:id"
- render={(props) => <Details {...props} baseUrl={baseUrl} />}
+ render={(props) => <Details {...props} baseUrl={baseUrl} />}s
  />
  <Route
  path="/bookshow/:id"
