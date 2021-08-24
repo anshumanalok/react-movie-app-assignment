@@ -1,6 +1,6 @@
 .home-container {
-  height: inherit;
-  width: inherit;
+  height: 70%;
+  width: 100%;
 }
 
 .home-heading {
@@ -19,4 +19,39 @@
 .home-grid-list {
   flex-wrap: nowrap !important;
   transform: translateZ(0);
+}
+
+.home-page-released-movies-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.home-page-released-movies-list-container {
+  margin: 16px;
+  width: 76%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.home-page-released-movies-search-pannel {
+  margin: 16px;
+  width: 24%;
+}
+
+.search-pannel-card {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-pannel-card-content {
+  margin-left: 7%;
+}
+
+.home-released-grid-list-tile:hover {
+  cursor: pointer;
 }
